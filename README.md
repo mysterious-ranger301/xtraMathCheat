@@ -28,6 +28,9 @@ where your tesseract executable lies
 
 *PyAutoGUI*
 
+This module is for the keyboard & mouse emulating
+for the automatic answers.
+
 Again, really simple to install, just run
 _pip install pyautogui_
 
