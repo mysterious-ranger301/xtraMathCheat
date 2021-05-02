@@ -51,14 +51,14 @@ Open a command line terminal, and shrink it so it's
 on the left side of the screen. Then open Chrome,
 go on XtraMath, and right before the first question
 appears, click on the terminal and run the _xtracheats.py_
-program. It will automatically click on the Chrome window,
+program. It will automatically click on the Chrome window (if you shrank the terminal correctly),
 causing it to focus on that, and the rest, you probably
 know! It will automatically do the questions for you,
 and when it's on the new mode thing, it will stay quiet until
-it sees the numbers in the question again. To disable it,
+it sees the numbers in the question again. To stop the program,
 put your cursor on the top-left side of the screen, and it
-will activate the PyAutoGUI.FailsafeException, causing the
-program to stop.
+should activate the PyAutoGUI.FailsafeException, causing the
+program to stop. (If it doesn't work, click on the terminal window and press Ctrl+C, and it will stop).
 And that's it! You're free to ace the XtraMath quiz!
 You could modify the program for yourself, but if you're
 to recreate it, make sure to put my name in there!
