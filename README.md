@@ -19,6 +19,7 @@ just run _pip install pytesseract_
 Installing actual tesseract (pytesseract is just a wrapper) for Windows is a bit
 tricky, but you can install it here:
 https://github.com/UB-Mannheim/tesseract/wiki
+
 In the program, the variable
 _t.pytesseract.tesseract\_cmd_ is the path
 where your tesseract executable lies
