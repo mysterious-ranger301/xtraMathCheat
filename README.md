@@ -15,7 +15,8 @@ _pip install pillow_
 This program uses tesseract for its
 OCR capabilities. Fairly simple install;
 just run _pip install pytesseract_
-Installing normal tesseract for Windows is a bit
+
+Installing actual tesseract (pytesseract is just a wrapper) for Windows is a bit
 tricky, but you can install it here:
 https://github.com/UB-Mannheim/tesseract/wiki
 In the program, the variable
