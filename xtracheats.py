@@ -80,6 +80,7 @@ while True:
         text2 = int(text2)
     except:
         # just leave it and diagnose
+        time.sleep(0.5)
         continue
     print('Result: {0}'.format(text1 * text2))
     p.click(1256, 429)
