@@ -20,6 +20,8 @@ Installing actual tesseract (pytesseract is just a wrapper) for Windows is a bit
 tricky, but you can install it here:
 https://github.com/UB-Mannheim/tesseract/wiki
 
+For Linux, just run _sudo apt install tesseract-ocr_
+
 In the program, the variable
 _t.pytesseract.tesseract\_cmd_ is the path
 where your tesseract executable lies
