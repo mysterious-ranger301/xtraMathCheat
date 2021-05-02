@@ -2,7 +2,9 @@
 A Python program that does XtraMath by itself!
 # Before you run
 You're gonna have to install some libraries
-in order for the program to work.
+in order for the program to work. (I assume you installed Python already, but if you didn't, go to http://python.org and install _Python 3_, not Python 2, because it
+won't work with Python 2. In the installer, make sure to check the _Add Python to PATH_ checkbox in the bottom of the window, enabling you to use _pip_ in the command line, 
+ensuring you could install the libraries below with ease.)
 
 *Pillow*
 
