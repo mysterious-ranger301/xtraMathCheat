@@ -5,11 +5,13 @@ You're gonna have to install some libraries
 in order for the program to work.
 
 *Pillow*
+
 This program uses pillow for its image
 detecting. Really simple install, just
 _pip install pillow_
 
 *PyTesseract & Tesseract*
+
 This program uses tesseract for its
 OCR capabilities. Fairly simple install;
 just run _pip install pytesseract_
@@ -21,6 +23,7 @@ _t.pytesseract.tesseract\_cmd_ is the path
 where your tesseract executable lies
 
 *PyAutoGUI*
+
 Again, really simple to install, just run
 _pip install pyautogui_
 
