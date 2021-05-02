@@ -15,7 +15,7 @@ t.pytesseract.tesseract_cmd to your tesseract installation
 Note 4: set the image paths to your desired
 """
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 # import libraries
 import pyautogui as p, pytesseract as t, time, os
@@ -50,7 +50,7 @@ def extractNumbers(text):
 im1coor = (915, 434, 1075 - 928, 571 - 434)
 im2coor = (915, 576, 1075 - 949, 710 - 576)
 path1 = 'C:\\im1.png' # set these to
-path2 = 'C:\\img.png' # your desired paths
+path2 = 'C:\\im2.png' # your desired paths
 print('Press enter to start')
 input()
 
