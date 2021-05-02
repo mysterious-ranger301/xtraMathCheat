@@ -49,8 +49,8 @@ def extractNumbers(text):
 # set coordinates (try these, and if they don't work, insert your own)
 im1coor = (915, 434, 1075 - 928, 571 - 434)
 im2coor = (915, 576, 1075 - 949, 710 - 576)
-path1 = 'C:\\users\\alexe\\onedrive\\documents\\im1.png' # set these to
-path2 = 'C:\\users\\alexe\\onedrive\\documents\\im2.png' # your desired
+path1 = 'C:\\im1.png' # set these to
+path2 = 'C:\\img.png' # your desired paths
 print('Press enter to start')
 input()
 
@@ -79,7 +79,7 @@ while True:
         text1 = int(text1)
         text2 = int(text2)
     except:
-        # just leave it
+        # just leave it and diagnose
         continue
     print('Result: {0}'.format(text1 * text2))
     p.click(1256, 429)
