@@ -37,7 +37,7 @@ _pip install pyautogui_
 # Coordinates
 You could try the default coordinates in the
 program, but if they don't work for some
-reason then you could just use _mouseNow.py_
+reason (they should) then you could just use _mouseNow.py_
 to determine some new ones. The coordinates
 themselves are box tuples (left, top, width, height).
 In the program, the _im1coor_ and _im2coor_ are the
