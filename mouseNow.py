@@ -2,7 +2,7 @@
 """
 Created on Tue Jul 28 13:11:55 2020
 
-@author: alexe
+@author: Mysterious Ranger
 """
 
 import pyautogui as automation, time
