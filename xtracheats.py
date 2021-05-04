@@ -18,7 +18,7 @@ Note 4: set the image paths to your desired
 __version__ = '1.0.1'
 
 # import libraries
-import pyautogui as p, pytesseract as t, time, os
+import pyautogui as p, pytesseract as t, time, os, random
 from PIL import Image
 
 p.FAILSAFE = True
@@ -84,6 +84,9 @@ while True:
         continue
     print('Result: {0}'.format(text1 * text2))
     p.click(1256, 429)
+    if random.randint(1, 15) == 9:
+        p.typewrite(str(text1 * text2 + 1))
+        time.sleep(.5)
     p.typewrite(str(text1 * text2))
     try:
         os.remove(path1)
