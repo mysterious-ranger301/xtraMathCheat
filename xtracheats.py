@@ -18,7 +18,7 @@ Note 4: set the image paths to your desired
 __version__ = '1.0.1'
 
 # import libraries
-import pyautogui as p, pytesseract as t, time, os, random
+import pyautogui as p, pytesseract as t, time, os, random, sys
 from PIL import Image
 
 p.FAILSAFE = True
@@ -43,14 +43,14 @@ def extractNumbers(text):
         elif char == 'A':
             detected += '4'
         elif char == 'Z':
-            detected += '2'
+            detected += '2' # this is for if pytesseract decides to go on vacation
     return detected
 
 # set coordinates (try these, and if they don't work, insert your own)
 im1coor = (915, 434, 1075 - 928, 571 - 434)
 im2coor = (915, 576, 1075 - 949, 710 - 576)
-path1 = 'C:\\im1.png' # set these to
-path2 = 'C:\\im2.png' # your desired paths
+path1 = 'C:\\users\\alexe\\onedrive\\documents\\im1.png' # set these to
+path2 = 'C:\\users\\alexe\\onedrive\\documents\\im2.png' # your desired
 print('Press enter to start')
 input()
 
@@ -67,25 +67,18 @@ while True:
     text1 = extractNumbers(text1)
     text2 = extractNumbers(text2)
     print('Text: {0} and {1}'.format(text1, text2))
-    # if text1 == 'J':
-        # text1 = '0'
-    # elif text2 == 'J':
-        # text2 = '0'
-    # elif text1 == 'Z':
-        # text1 = '2'
-    # elif text2 == 'Z':
-        # text2 = '2'
+    
     try:
         text1 = int(text1)
         text2 = int(text2)
     except:
-        # just leave it and diagnose
-        time.sleep(0.5)
+        # just leave it
+        time.sleep(.5)
         continue
     print('Result: {0}'.format(text1 * text2))
     p.click(1256, 429)
-    if random.randint(1, 15) == 9:
-        p.typewrite(str(text1 * text2 + 1))
+    if random.randint(1, 50) == 9 and sys.argv[1] != '-disable-chance=true':
+        p.typewrite(str((text1 * text2) + (1 if random.randint(1,2) == 1 else -1)))
         time.sleep(.5)
     p.typewrite(str(text1 * text2))
     try:
@@ -94,7 +87,3 @@ while True:
     except:
         print('Could not remove paths 1 or 2')
     time.sleep(1.2)
-# text = t.image_to_string(shot)
-# print('Text: ' + text)
-
-
