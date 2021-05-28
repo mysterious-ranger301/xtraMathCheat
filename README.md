@@ -1,5 +1,8 @@
 # XtraMathCheat
 A Python program that does XtraMath by itself!
+Version: 1.0.1
+Last update: 2021/05/28
+IMPORTANT: Usage has updated, read it carefully!
 # Before you run
 You're gonna have to install some libraries
 in order for the program to work. (I assume you installed Python already, but if you didn't, go to http://python.org and install _Python 3_, not Python 2, because it
