@@ -60,14 +60,15 @@ change them for your own paths.
 Open a command line terminal, and shrink it so it's
 on the left side of the screen. Then open Chrome,
 go on XtraMath, and right before the first question
-appears, click on the terminal and run the _xtracheats.py_
-program. It will automatically click on the Chrome window (if you shrank the terminal correctly),
+appears, click on the terminal and type _py xtracheats.py_. 
+It will automatically click on the Chrome window (if you shrank the terminal correctly),
 causing it to focus on that, and the rest, you probably
 know! It will automatically do the questions for you,
 and when it's on the new mode thing, it will stay quiet until
 it sees the numbers in the question again. Just to let you know, 
 there is a 2% chance that the program will purposefully enter 
-a question incorrect, just for your teachers to think it's you. 
+a question incorrect, just for your teachers to think it's you. (if you want to disable this, just
+add a parameter when you launch the program, just type _py xtracheats.py -disable-chance=true_)
 To stop the program,
 put your cursor on the top-left side of the screen, and it
 should activate the PyAutoGUI.FailsafeException, causing the
