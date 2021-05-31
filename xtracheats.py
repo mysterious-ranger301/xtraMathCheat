@@ -21,6 +21,10 @@ __version__ = '1.0.1'
 import pyautogui as p, pytesseract as t, time, os, random, sys
 from PIL import Image
 
+try:
+    sys.argv[1]
+except:
+    sys.argv[1] = ''
 p.FAILSAFE = True
 p.PAUSE = 0
 
