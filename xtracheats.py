@@ -24,7 +24,7 @@ from PIL import Image
 try:
     sys.argv[1]
 except:
-    sys.argv[1] = ''
+    sys.argv.append('')
 p.FAILSAFE = True
 p.PAUSE = 0
 
