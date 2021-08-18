@@ -44,6 +44,13 @@ for the automatic answers.
 Again, really simple to install, just run
 _pip install pyautogui_
 
+*Extra Libraries for Linux*
+
+PyAutoGUI has a builtin module called scrot. It installs
+automatically on Windows, but not on Linux. Open 
+Terminal, then type _sudo apt install scrot_.
+Just make sure instead of _pip_, it says _sudo apt install_.
+
 # Coordinates
 You could try the default coordinates in the
 program, but if they don't work for some
