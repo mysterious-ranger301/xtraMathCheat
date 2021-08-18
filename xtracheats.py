@@ -18,7 +18,7 @@ Note 4: set the image paths to your desired
 __version__ = '1.0.1'
 
 # import libraries
-import pyautogui as p, pytesseract as t, time, os, random, sys
+import pyautogui as p, pytesseract as t, time, os, random, sys, platform
 from PIL import Image
 
 try:
@@ -29,7 +29,12 @@ p.FAILSAFE = True
 p.PAUSE = 0
 
 # configure pytesseract
-t.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+if platform.system.lower() == 'windows':
+    t.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+    print('Platform is windows, configured executable')
+elif platform.system.lower() == 'linux':
+    t.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
+
 
 def extractNumbers(text):
     text.strip('\n')
